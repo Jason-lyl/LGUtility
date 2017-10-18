@@ -1,0 +1,30 @@
+platform :ios, "8.0"
+use_frameworks!
+
+target "Bonday" do
+#下载进度loading
+pod 'SVProgressHUD'
+
+
+#json解析类
+pod 'SwiftyJSON', '~> 3.1.4'
+
+#自动布局 masonry推荐
+pod 'SnapKit', '~> 3.1.2'
+
+#图片下载缓存 来自SDWebimage
+pod 'Kingfisher', '~>3.3.4'
+
+#加载指示器
+pod 'NVActivityIndicatorView'
+
+#类似 MJExtension
+#pod 'ObjectMapper'
+
+#网络请求 AFNetworking swift版本
+#pod 'Alamofire', '~> 4.4'
+
+#把json对象映射为model对象 他包含下载 ObjectMapper 和 Alamofire
+pod 'AlamofireObjectMapper'
+
+end
