@@ -24,10 +24,9 @@ class MyTabBarViewController: UITabBarController {
      */
     private func addChildViewControllers() {
         addChildViewController(childController: CourseViewController(), title: "开课", imageName: "tabbar_shouye")
-        addChildViewController(childController: AskQuestionViewController(), title: "提问", imageName: "tabbar_wenda")
+        addChildViewController(childController: QuestionViewController(), title: "问答", imageName: "tabbar_wenda")
         addChildViewController(childController: ApplyViewController(), title: "申请", imageName: "tabbar_application")
-        addChildViewController(childController: ActivityViewController(), title: "活动", imageName: "tabbar_pingdao")
-        addChildViewController(childController: MeViewController(), title: "我的", imageName: "tabbar_More")
+        addChildViewController(childController: FindViewController(), title: "发现", imageName: "tabbar_pingdao")
     }
 
     /**

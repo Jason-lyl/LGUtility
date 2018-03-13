@@ -1,14 +1,14 @@
 //
-//  ActivityViewController.swift
+//  FindViewController.swift
 //  Bonday
 //
-//  Created by bonday012 on 2017/5/17.
-//  Copyright © 2017年 bonday012. All rights reserved.
+//  Created by bonday012 on 2018/2/27.
+//  Copyright © 2018年 bonday012. All rights reserved.
 //
 
 import UIKit
 
-class ActivityViewController: BaseViewController{
+class FindViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

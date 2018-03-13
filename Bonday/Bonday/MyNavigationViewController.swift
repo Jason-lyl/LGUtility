@@ -15,7 +15,7 @@ class MyNavigationViewController: UINavigationController {
         let navBar = UINavigationBar.appearance()
         navBar.barTintColor = UIColorWithRGBA(r: 255, g: 81, b: 12, a: 1)
         navBar.tintColor = UIColor.white
-        navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont.systemFont(ofSize: 20)]
+        navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20)]
         
         // Do any additional setup after loading the view.
     }

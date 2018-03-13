@@ -17,9 +17,7 @@
 		83510BE71ECC34E500A40556 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83510BE61ECC34E500A40556 /* BaseViewController.swift */; };
 		83510BE91ECC352900A40556 /* MyTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83510BE81ECC352900A40556 /* MyTabBarViewController.swift */; };
 		83510BEB1ECC376E00A40556 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83510BEA1ECC376E00A40556 /* CourseViewController.swift */; };
-		83510BED1ECC378100A40556 /* AskQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83510BEC1ECC378100A40556 /* AskQuestionViewController.swift */; };
 		83510BEF1ECC378E00A40556 /* ApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83510BEE1ECC378E00A40556 /* ApplyViewController.swift */; };
-		83510BF11ECC379B00A40556 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83510BF01ECC379B00A40556 /* ActivityViewController.swift */; };
 		83510BF31ECC37A600A40556 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83510BF21ECC37A600A40556 /* MeViewController.swift */; };
 		83510BF51ECC3E2800A40556 /* MyNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83510BF41ECC3E2800A40556 /* MyNavigationViewController.swift */; };
 		835C03D31ED28D3C002033A5 /* NetInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C03D21ED28D3C002033A5 /* NetInterface.swift */; };
@@ -35,6 +33,8 @@
 		835C03EC1ED2FAE9002033A5 /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C03EB1ED2FAE9002033A5 /* NVActivityIndicatorView.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		835C37F21ECC4A54007B4F8D /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C37F11ECC4A54007B4F8D /* Const.swift */; };
 		8373B8801EE905D700328501 /* LGOCListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373B87F1EE905D700328501 /* LGOCListModel.swift */; };
+		839DA7A020450C1800C103CE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DA79F20450C1800C103CE /* QuestionViewController.swift */; };
+		839DA7A220450C3F00C103CE /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DA7A120450C3F00C103CE /* FindViewController.swift */; };
 		83A082FD1EE65E2F00A4790D /* LGOCListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A082FC1EE65E2F00A4790D /* LGOCListTableViewCell.swift */; };
 		83A082FF1EE6B12300A4790D /* LGOCListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A082FE1EE6B12300A4790D /* LGOCListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -73,9 +73,7 @@
 		83510BE61ECC34E500A40556 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		83510BE81ECC352900A40556 /* MyTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarViewController.swift; sourceTree = "<group>"; };
 		83510BEA1ECC376E00A40556 /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
-		83510BEC1ECC378100A40556 /* AskQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskQuestionViewController.swift; sourceTree = "<group>"; };
 		83510BEE1ECC378E00A40556 /* ApplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyViewController.swift; sourceTree = "<group>"; };
-		83510BF01ECC379B00A40556 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		83510BF21ECC37A600A40556 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		83510BF41ECC3E2800A40556 /* MyNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationViewController.swift; sourceTree = "<group>"; };
 		835C03D21ED28D3C002033A5 /* NetInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetInterface.swift; sourceTree = "<group>"; };
@@ -92,8 +90,13 @@
 		835C03EB1ED2FAE9002033A5 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = "../../../Library/Developer/Xcode/DerivedData/Bonday-bcqrvzkhtcsjvxehbzctopzogxjt/Build/Products/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework"; sourceTree = "<group>"; };
 		835C37F11ECC4A54007B4F8D /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		8373B87F1EE905D700328501 /* LGOCListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGOCListModel.swift; sourceTree = "<group>"; };
+		839DA79F20450C1800C103CE /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		839DA7A120450C3F00C103CE /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		83A082FC1EE65E2F00A4790D /* LGOCListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGOCListTableViewCell.swift; sourceTree = "<group>"; };
 		83A082FE1EE6B12300A4790D /* LGOCListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGOCListCollectionViewCell.swift; sourceTree = "<group>"; };
+		83DCEE6C1F988A1200874966 /* WRCycleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
+		83DCEE6D1F988A1200874966 /* WRCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRCycleScrollView.swift; sourceTree = "<group>"; };
+		83DCEE6E1F988A1200874966 /* WRProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
 		A12938F850C5BFB574B746D2 /* Pods-Bonday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonday.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bonday/Pods-Bonday.release.xcconfig"; sourceTree = "<group>"; };
 		AC1F5B164BEE8E3F9B669CC0 /* Pods_Bonday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bonday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -210,12 +213,12 @@
 			name = Me;
 			sourceTree = "<group>";
 		};
-		83510BDD1ECC338F00A40556 /* Activity */ = {
+		83510BDD1ECC338F00A40556 /* Find */ = {
 			isa = PBXGroup;
 			children = (
-				83510BF01ECC379B00A40556 /* ActivityViewController.swift */,
+				839DA7A120450C3F00C103CE /* FindViewController.swift */,
 			);
-			name = Activity;
+			name = Find;
 			sourceTree = "<group>";
 		};
 		83510BDE1ECC33EB00A40556 /* Apply */ = {
@@ -226,12 +229,12 @@
 			name = Apply;
 			sourceTree = "<group>";
 		};
-		83510BDF1ECC33F700A40556 /* AskQuestion */ = {
+		83510BDF1ECC33F700A40556 /* Question */ = {
 			isa = PBXGroup;
 			children = (
-				83510BEC1ECC378100A40556 /* AskQuestionViewController.swift */,
+				839DA79F20450C1800C103CE /* QuestionViewController.swift */,
 			);
-			name = AskQuestion;
+			name = Question;
 			sourceTree = "<group>";
 		};
 		83510BE01ECC340900A40556 /* Course */ = {
@@ -259,9 +262,9 @@
 			children = (
 				83510BE11ECC341900A40556 /* Main */,
 				83510BE01ECC340900A40556 /* Course */,
-				83510BDF1ECC33F700A40556 /* AskQuestion */,
+				83510BDF1ECC33F700A40556 /* Question */,
 				83510BDE1ECC33EB00A40556 /* Apply */,
-				83510BDD1ECC338F00A40556 /* Activity */,
+				83510BDD1ECC338F00A40556 /* Find */,
 				83510BDC1ECC338300A40556 /* Me */,
 			);
 			name = Controllers;
@@ -287,6 +290,8 @@
 		83510BE51ECC348800A40556 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				83DCEE6A1F9889D600874966 /* MyClass */,
+				83DCEE691F9889CE00874966 /* Libs */,
 				835C37F11ECC4A54007B4F8D /* Const.swift */,
 				835C03D21ED28D3C002033A5 /* NetInterface.swift */,
 				835C03D41ED28D4D002033A5 /* Define.swift */,
@@ -319,6 +324,31 @@
 				83A082FE1EE6B12300A4790D /* LGOCListCollectionViewCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		83DCEE691F9889CE00874966 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				83DCEE6B1F988A1200874966 /* WRCycleScrollView */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		83DCEE6A1F9889D600874966 /* MyClass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MyClass;
+			sourceTree = "<group>";
+		};
+		83DCEE6B1F988A1200874966 /* WRCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				83DCEE6C1F988A1200874966 /* WRCycleCell.swift */,
+				83DCEE6D1F988A1200874966 /* WRCycleScrollView.swift */,
+				83DCEE6E1F988A1200874966 /* WRProxy.swift */,
+			);
+			path = WRCycleScrollView;
 			sourceTree = "<group>";
 		};
 		B06CF9DB1EF797F81BD9BB6E /* Frameworks */ = {
@@ -402,21 +432,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = bonday012;
 				TargetAttributes = {
 					83510BA61ECC312500A40556 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = Z89FT9DY34;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					83510BBA1ECC312500A40556 = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 83510BA61ECC312500A40556;
 					};
 					83510BC51ECC312500A40556 = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 83510BA61ECC312500A40556;
 					};
@@ -541,7 +574,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839DA7A020450C1800C103CE /* QuestionViewController.swift in Sources */,
 				835C03D31ED28D3C002033A5 /* NetInterface.swift in Sources */,
+				839DA7A220450C3F00C103CE /* FindViewController.swift in Sources */,
 				835C03DE1ED293A2002033A5 /* LGOCLatestModel.swift in Sources */,
 				83510BE91ECC352900A40556 /* MyTabBarViewController.swift in Sources */,
 				835C03DC1ED29379002033A5 /* BaseModel.swift in Sources */,
@@ -553,9 +588,7 @@
 				83510BEF1ECC378E00A40556 /* ApplyViewController.swift in Sources */,
 				8373B8801EE905D700328501 /* LGOCListModel.swift in Sources */,
 				83A082FD1EE65E2F00A4790D /* LGOCListTableViewCell.swift in Sources */,
-				83510BF11ECC379B00A40556 /* ActivityViewController.swift in Sources */,
 				835C03DA1ED29266002033A5 /* LGOCLatestTableViewCell.swift in Sources */,
-				83510BED1ECC378100A40556 /* AskQuestionViewController.swift in Sources */,
 				83510BF51ECC3E2800A40556 /* MyNavigationViewController.swift in Sources */,
 				83510BE71ECC34E500A40556 /* BaseViewController.swift in Sources */,
 				835C03D51ED28D4D002033A5 /* Define.swift in Sources */,
@@ -615,7 +648,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -623,7 +658,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -665,7 +704,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -673,7 +714,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -704,13 +749,15 @@
 			baseConfigurationReference = 7C1B4424711A1D7546AFEA98 /* Pods-Bonday.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = Z89FT9DY34;
 				INFOPLIST_FILE = Bonday/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mindimp.bonday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -719,13 +766,15 @@
 			baseConfigurationReference = A12938F850C5BFB574B746D2 /* Pods-Bonday.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = Z89FT9DY34;
 				INFOPLIST_FILE = Bonday/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mindimp.bonday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -738,7 +787,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bonday.BondayTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bonday.app/Bonday";
 			};
 			name = Debug;
@@ -752,7 +802,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bonday.BondayTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bonday.app/Bonday";
 			};
 			name = Release;
@@ -765,7 +816,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bonday.BondayUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = Bonday;
 			};
 			name = Debug;
@@ -778,7 +830,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bonday.BondayUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = Bonday;
 			};
 			name = Release;

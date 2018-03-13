@@ -13,12 +13,11 @@ import SVProgressHUD
 import SwiftyJSON
 let tableViews = UITableView()
 let courceCellID = "courceCellID"
-let KHot_OpenCourse_latest = "videos/page?page=1&size=4&code=media_type_adviser"//最新课程
 
 class CourseViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
     
     var type = Int()
-    //数据
+    //数据      
     var items = [LGOCLatestModel]()
     var dataArr = NSMutableArray()
     override func viewDidLoad() {
