@@ -10,7 +10,8 @@ import UIKit
 import Alamofire
 import AlamofireObjectMapper
 import SVProgressHUD
-import SwiftyJSON
+import Moya
+import RxSwift
 let tableViews = UITableView()
 let courceCellID = "courceCellID"
 
@@ -24,26 +25,37 @@ class CourseViewController: BaseViewController,UITableViewDelegate,UITableViewDa
         super.viewDidLoad()
         view.backgroundColor = kCommenColor_whiteColor
         createTableView()
-       addDownLoadTask()
+      _ = self.addDownLoadTask()
         
         
-        
-
         // Do any additional setup after loading the view.
     }
+    
     func addDownLoadTask() {
+        let provider = MoyaProvider<ApiManager>()
+        SVProgressHUD.show(withStatus: "正在加载...")
+    provider.rx.request(.KHot_OpenCourse_latest)
+        .mapJSON()
+        .subscribe { event in
+            switch event{
+                case .success(let response):                    
+                print(response)
+                case .error(let error):
+                print(error)
+                SVProgressHUD.showError(withStatus: "加载失败....")
+            }
+        }
+
         let url = KBonDay + KHot_OpenCourse_latest
 //        let params = ["gender":1]
         let headers:HTTPHeaders = [
         "Authorization":"",
         "Accept":"application/json"
         ]
-        SVProgressHUD.show(withStatus: "正在加载...")
 
 Alamofire.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers)
         .responseObject { (response:DataResponse<DataObjectModel>) in
             guard response.result.isSuccess else{
-            SVProgressHUD.showError(withStatus: "加载失败....")
                 return
             }
             let dataModel = response.result.value
@@ -58,7 +70,7 @@ Alamofire.request(url, method: .get, parameters: nil, encoding: URLEncoding.defa
                 SVProgressHUD.dismiss()
             }
         }
-        
+
         
     }
     func createTableView() {
