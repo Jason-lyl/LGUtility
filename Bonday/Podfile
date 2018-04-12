@@ -23,4 +23,6 @@ pod 'AlamofireObjectMapper'
 pod 'RxSwift',    '~> 4.1.2'
 pod 'RxCocoa',    '~> 4.1.2'
 pod 'Moya/RxSwift',       '~> 11.0.0'
+pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+
 end
