@@ -13,7 +13,7 @@ pod 'SwiftyJSON', '~> 4.0.0'
 pod 'SnapKit', '~> 4.0.0'
 
 #图片下载缓存 来自SDWebimage
-pod 'Kingfisher', '~>4.6.3'
+pod 'Kingfisher', '4.6.1'
 
 #加载指示器
 pod 'NVActivityIndicatorView'
